@@ -42,7 +42,7 @@ def ex2():
     for im in imlist:
         imarr.append(numpy.array(Image.open(im),dtype=numpy.float))
 
-    arr = imarr[1] - imarr[0]
+    arr = (imarr[1] - imarr[0] + 255)/2
 
     # Round values in array and cast as 8-bit integer
     arr=numpy.array(numpy.round(arr),dtype=numpy.uint8)
