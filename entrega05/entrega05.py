@@ -44,7 +44,7 @@ def ex1():
 
 def ex2():
     
-    scale = int(input('Scale increasement value:\nOnly 2 working ok'))
+    scale = int(input('Scale increasement value:'))
 
     # Access all png and jpg images
     allfiles = os.listdir(os.getcwd())
