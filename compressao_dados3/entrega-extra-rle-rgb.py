@@ -1,22 +1,9 @@
-matrix = []
-
-print('Entre com uma matriz para comprimir ou pressione enter para usar uma matriz default:')
-
-nRow = input('Numero de linhas da matriz:')
-if nRow != '':
-    nRow = int(nRow)
-    for i in range(nRow):
-        row = [int(x) for x in input().split()]
-        matrix.append(row)
-
-if matrix == [] or nRow == '':
-    matrix = [
-        [0,  255, 132, 14 ], 
-        [44, 12,  332, 14 ],
-        [44, 123, 123, 123],
-        [4,  4,   44,  4  ],
-        [1,  100, 100, 111]
-    ]
+matrix = [
+    [[0,0,0], [255,0,0], [123,132,0], [14,0,0]], 
+    [[44,4,12], [0,12,0], [332,0,0], [14,0,0]],
+    [[44,0,0], [123,0,0], [0,0,123], [0,0,123]],
+    [[4,4,4], [4,4,4], [4,4,4], [44,12,0]]
+]
 
 r = len(matrix)
 c = len(matrix[0])

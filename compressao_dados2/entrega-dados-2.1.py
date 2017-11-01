@@ -41,4 +41,12 @@ for i in range(r):
         else:
             previous = 1
 
-print('Matriz comprimida:   {}\nMatriz original: {}'.format(RLE, matrix))
+# print('Matriz comprimida:   {}\nMatriz original: {}'.format(RLE, matrix))
+
+print('Matriz compimida:')
+for i in range(r):
+    print(RLE[i])
+
+print('Matriz original:')
+for i in range(r):
+    print(matrix[i])
